@@ -91,7 +91,7 @@ const Home: NextPage = () => {
           Restore any face photo
         </h1>
         <ResizablePanel>
-          <AnimatePresence exitBeforeEnter>
+          <AnimatePresence mode="wait">
             <motion.div className="flex justify-between items-center w-full flex-col mt-4">
               <Toggle
                 className={`${restoredLoaded ? "visible" : "invisible"} mb-6`}
